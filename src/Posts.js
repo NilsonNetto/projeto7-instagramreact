@@ -1,19 +1,19 @@
 
 
 
-export default function Posts() {
+export default function Posts(props) {
   return (
     <div class="post">
       <div class="post-header">
         <div>
-          <a href="#"><img src="images/meowed.png" /></a>
-          <a href="#"><p class="autor">meowed</p></a>
+          <a href="#"><img src={props.authorImg} /></a>
+          <a href="#"><p class="autor">{props.author}</p></a>
         </div>
         <div>
           <a href="#"><ion-icon name="ellipsis-horizontal"></ion-icon></a>
         </div>
       </div>
-      <img src="images/gato-telefone.png" />
+      <img src={props.postImg} />
       <div class="post-footer">
         <div>
           <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
@@ -25,15 +25,15 @@ export default function Posts() {
         </div>
       </div>
       <div class="post-likes">
-        <a href="#"><img src="images/barked.png" /></a>
+        <a href="#"><img src={props.likeAuthorImg} /></a>
         <p class="likes">
-          Curtido por <a href="#">barked</a> e
-          <a href="#"> outras 13.751 pessoas</a>
+          Curtido por <a href="#">{props.likeAuthor}</a> e
+          <a href="#"> outras {props.likeAmount} pessoas</a>
         </p>
       </div>
 
       <div class="comments-header">
-        <a href="#">Clique para ver os outros 666 comentários</a>
+        <a href="#">Clique para ver os outros {props.commentsAmount} comentários</a>
       </div>
       <div class="comments">
         <p><a class="comment-author" href="#">9gag</a>OMG so cute</p>
