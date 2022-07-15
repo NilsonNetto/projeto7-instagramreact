@@ -1,5 +1,9 @@
 import Posts from "./Posts"
 
+const postsValues = [
+
+]
+
 export default function Postsbox() {
   return (
     <div class="caixa-posts">
