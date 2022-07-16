@@ -10,7 +10,7 @@ a {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   color: #262626;
 }
 
@@ -21,11 +21,10 @@ ion-icon {
 
 /* ==================== CABECALHO ==================== */
 
-
 .linha-horizontal-topo {
   width: 100%;
   height: 1px;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   position: fixed;
   top: 54px;
   left: 0;
@@ -35,7 +34,7 @@ ion-icon {
 .linha-vertical {
   width: 1px;
   height: 22px;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   margin: auto 10px;
 }
 
@@ -77,19 +76,19 @@ ion-icon {
 
 .logos img {
   height: 29px;
-  margin-top: 8px
+  margin-top: 8px;
 }
 
 .pesquisar {
   width: 215px;
   height: 30px;
   margin: auto;
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
   border-radius: 3px;
   text-align: center;
   font-size: 12px;
   font-weight: 400;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .cabecalho-mobile {
@@ -179,7 +178,7 @@ ion-icon {
   width: 614px;
   margin: 24px auto 60px auto;
   background-color: white;
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
   border-radius: 3px;
 }
 
@@ -231,6 +230,14 @@ video {
   margin: 10px 0 0 15px;
 }
 
+.post-footer ion-icon:first-child {
+  cursor: pointer;
+}
+
+.post-footer ion-icon[name='heart'] {
+  color: red;
+}
+
 .mark {
   margin-right: 15px;
 }
@@ -261,7 +268,7 @@ video {
 
 .comments-header a {
   font-size: 14px;
-  color: #C7C7C7;
+  color: #c7c7c7;
 }
 
 .comments {
@@ -288,7 +295,7 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #DBDBDB;
+  border-top: 1px solid #dbdbdb;
 }
 
 .add-comment div {
@@ -308,16 +315,16 @@ video {
 }
 
 .publicar {
-  color: #B2DFFC;
+  color: #b2dffc;
 }
 
 .publicar:hover {
   transition: 300ms;
-  color: #0095F6;
+  color: #0095f6;
 }
 
 .arroba {
-  color: #139EF2;
+  color: #139ef2;
   font-weight: 400;
 }
 
@@ -354,7 +361,7 @@ video {
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 
 .sugestao {
@@ -381,13 +388,13 @@ video {
 }
 
 .sugestao-contas p {
-  color: #8E8E8E;
+  color: #8e8e8e;
   font-size: 12px;
 }
 
 .seguir {
   font-size: 12px;
-  color: #139EF2;
+  color: #139ef2;
 }
 
 .sugestao img {
@@ -400,19 +407,19 @@ video {
   margin: 30px 0 15px 0;
   font-size: 11px;
   font-weight: 400;
-  color: #C7C7C7;
+  color: #c7c7c7;
 }
 
 .sidebar-footer a {
   font-size: 11px;
   font-weight: 400;
-  color: #C7C7C7;
+  color: #c7c7c7;
 }
 
 .sidebar-copyright {
   font-size: 11px;
   font-weight: 400;
-  color: #C7C7C7;
+  color: #c7c7c7;
 }
 
 .footer-mobile {
@@ -421,12 +428,10 @@ video {
 
 /* ==================== LAYOUT MOBILE ==================== */
 @media (max-width: 935px) and (min-width: 614px) {
-
   .sidebar,
   .sidebar-space {
     display: none;
   }
-
 
   .cabecalho-desktop a {
     margin: 15px 20px 15px 0px;
@@ -439,11 +444,9 @@ video {
   .logos ion-icon {
     margin-left: 20px;
   }
-
 }
 
-@media (max-width:614px) {
-
+@media (max-width: 614px) {
   .sidebar,
   .sidebar-space {
     display: none;
@@ -497,7 +500,7 @@ video {
     border-right: none;
   }
 
-  .post>img {
+  .post > img {
     width: 100vw;
     height: auto;
   }
@@ -509,7 +512,7 @@ video {
   .linha-horizontal-footer {
     width: 100%;
     height: 1px;
-    background-color: #DBDBDB;
+    background-color: #dbdbdb;
     position: fixed;
     bottom: 54px;
     left: 0;
@@ -533,5 +536,4 @@ video {
   .footer-mobile ion-icon {
     margin: auto 20px;
   }
-
 }

@@ -1,9 +1,8 @@
 import React from 'react'
 
-
 export default function Posts(props) {
 
-
+  const [like, setLike] = React.useState(false)
 
   return (
     <div class="post">
@@ -23,7 +22,11 @@ export default function Posts(props) {
       </video>) : <img src={props.postImg} />}
       <div class="post-footer">
         <div>
-          <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
+          {like ?
+            (<ion-icon name="heart" onClick={() => setLike(false)}></ion-icon>) :
+            (<ion-icon name="heart-outline" onClick={() => setLike(true)}></ion-icon>)
+          }
+
           <a href="#"><ion-icon name="chatbubble-outline"></ion-icon></a>
           <a href="#"><ion-icon name="paper-plane-outline"></ion-icon></a>
         </div>
