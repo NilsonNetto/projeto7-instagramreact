@@ -2,7 +2,7 @@ import Sidebarperfil from "./Sidebarperfil"
 import Suggestion from "./Suggestion"
 
 
-const user = { name: 'Catana', username: 'catanacomics', img: 'images/catanacomics.png' }
+const user = { name: 'Nilson Netto', username: 'non.netto', img: 'images/catanacomics.png' }
 
 const Suggestions = [
   { name: 'bad.vibes.meme', img: 'images/badvibesmemes.png', follow: true },
@@ -31,27 +31,11 @@ export default function Sidebar() {
 
 
         <div class="sidebar-footer">
-          <a href="#">Sobre</a>
-          •
-          <a href="#">Ajuda</a>
-          •
-          <a href="#">Imprensa</a>
-          •
-          <a href="#">API</a>
-          •
-          <a href="#">Carreiras</a>
-          •
-          <a href="#">Privacidade</a>
-          •
-          <a href="#">Termos</a>
-          •
-          <a href="#">Localização</a>
-          •
-          <a href="#">Contas mais relevantes</a>
-          •
-          <a href="#">Hashtags</a>
-          •
-          <a href="#">Idioma</a>
+          <a href="#">Sobre</a> • <a href="#">Ajuda</a> • <a href="#">Imprensa</a> •
+          <a href="#">API</a> • <a href="#">Carreiras</a> •
+          <a href="#">Privacidade</a> • <a href="#">Termos</a> •
+          <a href="#">Localização</a> • <a href="#">Contas mais relevantes</a> •
+          <a href="#">Hashtags</a> • <a href="#">Idioma</a>
         </div>
         <div class="sidebar-copyright">© 2021 INSTAGRAM DO FACEBOOK</div>
       </div>

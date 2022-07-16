@@ -13,7 +13,11 @@ export default function Posts(props) {
           <a href="#"><ion-icon name="ellipsis-horizontal"></ion-icon></a>
         </div>
       </div>
-      <img src={props.postImg} />
+      {props.video ? (<video width="100%" height="100%" controls autoplay muted>
+        <source src={props.videoMp4} type="video/mp4" />
+        <source src={props.videoOgg} type="video/ogg" />
+        Your browser does not support the video tag.
+      </video>) : <img src={props.postImg} />}
       <div class="post-footer">
         <div>
           <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
@@ -25,7 +29,9 @@ export default function Posts(props) {
         </div>
       </div>
       <div class="post-likes">
+
         <a href="#"><img src={props.likeAuthorImg} /></a>
+
         <p class="likes">
           Curtido por <a href="#">{props.likeAuthor}</a> e
           <a href="#"> outras {props.likeAmount} pessoas</a>
@@ -36,21 +42,17 @@ export default function Posts(props) {
         <a href="#">Clique para ver os outros {props.commentsAmount} comentários</a>
       </div>
       <div class="comments">
-        <p><a class="comment-author" href="#">9gag</a>OMG so cute</p>
+        <p><a class="comment-author" href="#">{props.comments1Author}</a>{props.comments1Text}</p>
         <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
       </div>
       <div class="comments">
         <p>
-          <a class="comment-author" href="#">mae</a>O que que o gato ta
-          fazendo com o celular?
-        </p>
+          <a class="comment-author" href="#">{props.comments2Author}</a>{props.comments2Text}</p>
         <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
       </div>
       <div class="comments">
         <p>
-          <a class="comment-author" href="#">lerodcs</a>That cat is
-          prettier than me lol
-        </p>
+          <a class="comment-author" href="#">{props.comments3Author}</a>{props.comments3Text}</p>
         <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
       </div>
       <div class="add-comment">

@@ -5,6 +5,7 @@ a {
   height: auto;
   text-decoration: none;
   color: #262626;
+  cursor: pointer;
 }
 
 body {

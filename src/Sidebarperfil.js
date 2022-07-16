@@ -7,6 +7,6 @@ export default function Sidebarperfil(props) {
         <a href="#">{props.username}</a>
         <p>{props.name}</p>
       </div>
-    </div>
+    </div >
   )
 }
