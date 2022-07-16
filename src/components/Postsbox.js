@@ -48,7 +48,7 @@ const postsData = [
 
 export default function Postsbox() {
   return (
-    <div class="caixa-posts">
+    <div className="caixa-posts">
 
       {postsData.map(p =>
         <Posts

@@ -4,11 +4,11 @@ import Footer from "./Footer";
 
 export default function App() {
   return (
-    <div class="main">
+    <div className="main">
       <Header />
-      <div class="linha-horizontal-topo"></div>
+      <div className="linha-horizontal-topo"></div>
       <Container />
-      <div class="linha-horizontal-footer"></div>
+      <div className="linha-horizontal-footer"></div>
       <Footer />
     </div>
   );

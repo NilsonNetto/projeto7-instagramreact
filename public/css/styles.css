@@ -230,11 +230,12 @@ video {
   margin: 10px 0 0 15px;
 }
 
-.post-footer ion-icon:first-child {
+ion-icon[name='heart-outline'] {
   cursor: pointer;
 }
 
-.post-footer ion-icon[name='heart'] {
+ion-icon[name='heart'] {
+  cursor: pointer;
   color: red;
 }
 

@@ -1,9 +1,9 @@
 
 export default function Sidebarperfil(props) {
   return (
-    <div class="perfil">
+    <div className="perfil">
       <a href="#"><img src={props.img} /></a>
-      <div class="account">
+      <div className="account">
         <a href="#">{props.username}</a>
         <p>{props.name}</p>
       </div>

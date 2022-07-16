@@ -4,8 +4,8 @@ import Sidebar from "./Sidebar"
 
 export default function Container() {
   return (
-    <div class="container">
-      <div class="feed">
+    <div className="container">
+      <div className="feed">
         <Storiesbox />
 
         <Postsbox />

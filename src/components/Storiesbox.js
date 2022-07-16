@@ -14,14 +14,14 @@ const stories = [
 
 export default function Storiesbox() {
   return (
-    <div class="caixa-stories">
+    <div className="caixa-stories">
 
       {stories.map(st => (
         <Stories name={st.name} img={st.img} />
       ))
       }
 
-      <div class="stories-arrow">
+      <div className="stories-arrow">
         <ion-icon name="chevron-forward-circle"></ion-icon>
       </div>
     </div>

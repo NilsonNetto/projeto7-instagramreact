@@ -15,13 +15,13 @@ const Suggestions = [
 
 export default function Sidebar() {
   return (
-    <div class="sidebar-space">
-      <div class="sidebar">
+    <div className="sidebar-space">
+      <div className="sidebar">
 
 
         <Sidebarperfil name={user.name} username={user.username} img={user.img} />
 
-        <div class="sugestao-header">
+        <div className="sugestao-header">
           <p>Sugestões para você</p>
           <a href="#">Ver tudo</a>
         </div>
@@ -30,14 +30,14 @@ export default function Sidebar() {
           <Suggestion name={suggest.name} img={suggest.img} follow={suggest.follow} />)}
 
 
-        <div class="sidebar-footer">
+        <div className="sidebar-footer">
           <a href="#">Sobre</a> • <a href="#">Ajuda</a> • <a href="#">Imprensa</a> •
           <a href="#">API</a> • <a href="#">Carreiras</a> •
           <a href="#">Privacidade</a> • <a href="#">Termos</a> •
           <a href="#">Localização</a> • <a href="#">Contas mais relevantes</a> •
           <a href="#">Hashtags</a> • <a href="#">Idioma</a>
         </div>
-        <div class="sidebar-copyright">© 2021 INSTAGRAM DO FACEBOOK</div>
+        <div className="sidebar-copyright">© 2021 INSTAGRAM DO FACEBOOK</div>
       </div>
     </div>
   )
