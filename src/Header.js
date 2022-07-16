@@ -1,5 +1,8 @@
 
 export default function Header() {
+
+  const desktopIcons = ["paper-plane-outline", "compass-outline", "heart-outline", "person-outline"]
+
   return (
     <div class="header">
       <div class="cabecalho-desktop">
@@ -10,10 +13,7 @@ export default function Header() {
         </div>
         <input class="pesquisar" placeholder="Pesquisar" />
         <div class="menu">
-          <a href="#"><ion-icon name="paper-plane-outline"></ion-icon> </a>
-          <a href="#"><ion-icon name="compass-outline"></ion-icon> </a>
-          <a href="#"><ion-icon name="heart-outline"></ion-icon> </a>
-          <a href="#"><ion-icon name="person-outline"></ion-icon> </a>
+          {desktopIcons.map(icon => <a href="#"><ion-icon name={icon}></ion-icon> </a>)}
         </div>
       </div>
       <div class="cabecalho-mobile">
@@ -25,3 +25,4 @@ export default function Header() {
 
   )
 }
+

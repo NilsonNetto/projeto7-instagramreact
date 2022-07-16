@@ -1,7 +1,10 @@
-
+import React from 'react'
 
 
 export default function Posts(props) {
+
+
+
   return (
     <div class="post">
       <div class="post-header">
