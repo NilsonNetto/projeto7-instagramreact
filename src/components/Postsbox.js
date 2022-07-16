@@ -8,8 +8,8 @@ const postsData = [
     postImg: 'images/gato-telefone.png',
     likeAuthor: 'barked',
     likeAuthorImg: 'images/barked.png',
-    likeAmount: '13.751',
-    commentsAmount: '666',
+    likeAmount: 13.751,
+    commentsAmount: 666,
     comments: [
       { author: '9gag', text: 'OMG so cute' },
       { author: 'mae', text: 'O que que o gato tafazendo com o celular?' },
@@ -22,8 +22,8 @@ const postsData = [
     postImg: 'images/dog.png',
     likeAuthor: 'respondeai',
     likeAuthorImg: 'images/respondeai.png',
-    likeAmount: '1.999',
-    commentsAmount: '697',
+    likeAmount: 1.999,
+    commentsAmount: 697,
     comments: [
       { author: '9gag', text: 'Boop' },
       { author: 'mae', text: 'Ai que fofinho' },
@@ -37,8 +37,8 @@ const postsData = [
     videoOgg: 'images/rickrolled.ogg',
     likeAuthor: 'respondeai',
     likeAuthorImg: 'images/respondeai.png',
-    likeAmount: '69.696',
-    commentsAmount: '999',
+    likeAmount: 69.696,
+    commentsAmount: 999,
     comments: [
       { author: '9gag', text: 'rickrolled guys' },
       { author: 'mae', text: 'Não entendi, traduz pra mim' },

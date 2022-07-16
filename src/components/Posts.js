@@ -2,10 +2,22 @@ import React from 'react'
 
 export default function Posts(props) {
 
+  const likeProps = (props.likeAmount);
   const [likePost, setLikePost] = React.useState(false);
   const [likeComment1, setLikeComment1] = React.useState(false);
   const [likeComment2, setLikeComment2] = React.useState(false);
   const [likeComment3, setLikeComment3] = React.useState(false);
+  const [likeNumber, setLikeNumber] = React.useState(likeProps);
+
+  function liked() {
+    setLikePost(false);
+    setLikeNumber(likeNumber - 0.001)
+  }
+
+  function disliked() {
+    setLikePost(true);
+    setLikeNumber(likeNumber + 0.001)
+  }
 
   return (
     <div className="post">
@@ -26,8 +38,8 @@ export default function Posts(props) {
       <div className="post-footer">
         <div>
           {likePost ?
-            (<ion-icon name="heart" onClick={() => setLikePost(false)}></ion-icon>) :
-            (<ion-icon name="heart-outline" onClick={() => setLikePost(true)}></ion-icon>)
+            (<ion-icon name="heart" onClick={liked}></ion-icon>) :
+            (<ion-icon name="heart-outline" onClick={disliked}></ion-icon>)
           }
 
           <a href="#"><ion-icon name="chatbubble-outline"></ion-icon></a>
@@ -43,7 +55,7 @@ export default function Posts(props) {
 
         <p className="likes">
           Curtido por <a href="#">{props.likeAuthor}</a> e
-          <a href="#"> outras {props.likeAmount} pessoas</a>
+          <a href="#"> outras {likeNumber.toFixed(3)} pessoas</a>
         </p>
       </div>
 
